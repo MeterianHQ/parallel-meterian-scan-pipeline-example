@@ -3,7 +3,7 @@
 On this branch, upon trigger the [**example pipeline**](.github/workflows/main.yaml) runs a primary job named `primary_routine` and a test and deployment job `test_n_deployment` in parallel with the `meterian_scan` job.
 The `test_n_deployment` job depends on the successful run of the `primary_routine` job in order to run.
 Failure of the Meterian scan won't cause the job to fail and won't affect the execution of the either of the other jobs.
-Instead the exit code of it's execution is captured and is used to send a custom email to the maintainers of the repository.
+Instead the exit code of it's execution is captured and is used to send a custom email to a pre-configured email address.
 With this setup the `meterian_scan` job will never report a failure.
 
 ```
