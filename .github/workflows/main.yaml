@@ -1,6 +1,6 @@
 name: Sample workflow
 
-on: push:
+on: push
 
 jobs:
   primary_routine:
